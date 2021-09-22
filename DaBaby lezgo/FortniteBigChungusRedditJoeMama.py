@@ -34,13 +34,13 @@ def prime(v):
             return(k, "is prime")
     if v == 1:
         return("1 is neither prime nor composite")
-    if v == 2:
+    elif v == 2:
         return("2 is the only even prime number")    
-    if v == 0:
+    elif v == 0:
         return("whole numbers only please")
-    if v < (m+0.5):
+    elif v < (m+0.5):
         return(prime(m))
-    if ((m+0.5) <= v <= k):
+    elif ((m+0.5) <= v <= k):
         return(prime(k))
 def W(v):
     return(mpmath.lambertw(v))
